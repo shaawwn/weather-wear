@@ -5,6 +5,7 @@ import SearchResults from './components/SearchInput'
 import SearchDropdown from './components/SearchDropdown'
 import SearchInput from './components/SearchInput'
 
+import DailyForecast from './components/ForecastTable'
 import CurrentWeather from './components/CurrentWeather'
 import Outfits from './components/Outfits'
 
@@ -72,16 +73,19 @@ function App() {
 		// console.log("Location in render", location, currentWeather)
 
 		const screenWidth = screen.width
-		console.log("screen", screenWidth)
 		return(
-			<section className="bg-red-400 home-section">
-				{/* searchbar */}
+			<section className="home-section">
 				<div className="w-full flex p-1">
-					<input className="nav-input" placeholder="Search location"></input>
+					{/* Actually need to be able to search here... */}
+					<input 
+						className="nav-input" placeholder="Search location"
+						onChange={(e) => handleChange(e.target.value)}
+						onKeyDown={(e) => handleKeyPress(e)}
+						></input>
 				</div>
 
 				<div className="home">
-					<div className="flex flex-col bg-green-400 w-full gap-[40px]">
+					<div className="flex flex-col w-full gap-[40px]">
 					<CurrentWeather 
 						location={location}
 						weather={currentWeather}
@@ -91,21 +95,13 @@ function App() {
 					</div>
 
 					{screenWidth > 763 ? 
-						<CurrentWeather 
-							location={location}
-							weather={currentWeather}
-							forecast={dailyForecast}
-						/>
+						<DailyForecast forecast={dailyWeather}/>
 					:null
 					}
 				</div>
 				
 				{screenWidth< 763 ? 
-					<CurrentWeather 
-						location={location}
-						weather={currentWeather}
-						forecast={dailyForecast}
-					/>
+					<DailyForecast forecast={dailyWeather}/>
 				:null
 				} 
 			</section>
@@ -118,7 +114,7 @@ function App() {
 	return (
 		<>
 			<main>
-				{location && currentWeather && dailyForecast ? renderLocation() : renderLanding()}
+				{location && currentWeather && dailyWeather ? renderLocation() : renderLanding()}
 			</main>
 
 		</>

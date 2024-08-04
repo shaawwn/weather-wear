@@ -52,7 +52,7 @@ export default function useSearch() {
 
     function dailyForecast(lat, lon) {
         // 5 day forecast at 3 hour intervals
-        fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}`)
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`)
         .then((response) => response.json())
         .then((data) => {
         //   console.log("Weather forecast", data)

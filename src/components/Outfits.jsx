@@ -61,7 +61,6 @@ export default function Outfits({weather}) {
         } else {
             setOutfit(weatherTypes.outfits[weatherMain][weatherDesc])
         }
-        // setOutfit(weatherTypes.outfits[weatherMain][weatherDesc])
 
     }
 
@@ -76,8 +75,7 @@ export default function Outfits({weather}) {
 
     return(
         <section className="panel">
-            <h1>Outfits here. Temp is: {temp}</h1>
-            {outfit ? <p>{outfit}</p> :null}
+            {outfit ? <p className="text-[32px] xl:text-[36px]">{outfit}</p> :null}
         </section>
     )
 }
