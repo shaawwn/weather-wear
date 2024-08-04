@@ -1,0 +1,261 @@
+{
+    "outfits": {
+      "Thunderstorm": {
+        "light rain": {
+          "temp": "any",
+          "outfit": "Waterproof jacket, rubber boots, and an umbrella"
+        },
+        "rain": {
+          "temp": "any",
+          "outfit": "Waterproof jacket, rubber boots, and an umbrella"
+        },
+        "heavy rain": {
+          "temp": "any",
+          "outfit": "Heavy waterproof coat, rubber boots, and an umbrella"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Waterproof jacket and rubber boots"
+        }
+      },
+      "Drizzle": {
+        "light intensity drizzle": {
+          "temp": "any",
+          "outfit": "Light rain jacket and waterproof shoes"
+        },
+        "drizzle": {
+          "temp": "any",
+          "outfit": "Rain jacket and waterproof shoes"
+        },
+        "heavy intensity drizzle": {
+          "temp": "any",
+          "outfit": "Waterproof jacket and waterproof shoes"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Rain jacket and waterproof shoes"
+        }
+      },
+      "Rain": {
+        "light rain": {
+          "temp": "any",
+          "outfit": "Raincoat and waterproof shoes"
+        },
+        "moderate rain": {
+          "temp": "any",
+          "outfit": "Raincoat, waterproof shoes, and an umbrella"
+        },
+        "heavy intensity rain": {
+          "temp": "any",
+          "outfit": "Heavy waterproof coat, waterproof shoes, and an umbrella"
+        },
+        "very heavy rain": {
+          "temp": "any",
+          "outfit": "Heavy waterproof coat, waterproof shoes, and an umbrella"
+        },
+        "extreme rain": {
+          "temp": "any",
+          "outfit": "Heavy waterproof coat, waterproof shoes, and an umbrella"
+        },
+        "freezing rain": {
+          "temp": "cold",
+          "outfit": "Warm waterproof coat, waterproof shoes, and an umbrella"
+        },
+        "light intensity shower rain": {
+          "temp": "any",
+          "outfit": "Light rain jacket and waterproof shoes"
+        },
+        "shower rain": {
+          "temp": "any",
+          "outfit": "Rain jacket and waterproof shoes"
+        },
+        "heavy intensity shower rain": {
+          "temp": "any",
+          "outfit": "Heavy waterproof coat, waterproof shoes, and an umbrella"
+        },
+        "ragged shower rain": {
+          "temp": "any",
+          "outfit": "Waterproof jacket and waterproof shoes"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Raincoat and waterproof shoes"
+        }
+      },
+      "Snow": {
+        "light snow": {
+          "temp": "cold",
+          "outfit": "Warm coat, gloves, scarf, and winter boots"
+        },
+        "snow": {
+          "temp": "cold",
+          "outfit": "Warm coat, gloves, scarf, and winter boots"
+        },
+        "heavy snow": {
+          "temp": "cold",
+          "outfit": "Heavy coat, gloves, scarf, and insulated winter boots"
+        },
+        "sleet": {
+          "temp": "cold",
+          "outfit": "Waterproof jacket, gloves, scarf, and waterproof boots"
+        },
+        "shower sleet": {
+          "temp": "cold",
+          "outfit": "Waterproof jacket, gloves, scarf, and waterproof boots"
+        },
+        "light rain and snow": {
+          "temp": "cold",
+          "outfit": "Warm waterproof coat, gloves, scarf, and waterproof boots"
+        },
+        "rain and snow": {
+          "temp": "cold",
+          "outfit": "Warm waterproof coat, gloves, scarf, and waterproof boots"
+        },
+        "light shower snow": {
+          "temp": "cold",
+          "outfit": "Warm coat, gloves, scarf, and winter boots"
+        },
+        "shower snow": {
+          "temp": "cold",
+          "outfit": "Warm coat, gloves, scarf, and winter boots"
+        },
+        "heavy shower snow": {
+          "temp": "cold",
+          "outfit": "Heavy coat, gloves, scarf, and insulated winter boots"
+        },
+        "other": {
+          "temp": "cold",
+          "outfit": "Warm coat, gloves, scarf, and winter boots"
+        }
+      },
+      "Mist": {
+        "mist": {
+          "temp": "any",
+          "outfit": "Light jacket and comfortable shoes"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Light jacket and comfortable shoes"
+        }
+      },
+      "Smoke": {
+        "smoke": {
+          "temp": "any",
+          "outfit": "Breathable mask and light clothing"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Breathable mask and light clothing"
+        }
+      },
+      "Haze": {
+        "haze": {
+          "temp": "any",
+          "outfit": "Light jacket and comfortable shoes"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Light jacket and comfortable shoes"
+        }
+      },
+      "Dust": {
+        "dust": {
+          "temp": "any",
+          "outfit": "Breathable mask and light clothing"
+        },
+        "sand": {
+          "temp": "any",
+          "outfit": "Breathable mask and light clothing"
+        },
+        "sand/ dust whirls": {
+          "temp": "any",
+          "outfit": "Breathable mask and light clothing"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Breathable mask and light clothing"
+        }
+      },
+      "Fog": {
+        "fog": {
+          "temp": "any",
+          "outfit": "Warm jacket and comfortable shoes"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Warm jacket and comfortable shoes"
+        }
+      },
+      "Ash": {
+        "volcanic ash": {
+          "temp": "any",
+          "outfit": "Breathable mask and light clothing"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Breathable mask and light clothing"
+        }
+      },
+      "Squall": {
+        "squalls": {
+          "temp": "any",
+          "outfit": "Windbreaker jacket and waterproof shoes"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Windbreaker jacket and waterproof shoes"
+        }
+      },
+      "Tornado": {
+        "tornado": {
+          "temp": "any",
+          "outfit": "Sturdy clothing and shoes, seek shelter"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Sturdy clothing and shoes, seek shelter"
+        }
+      },
+      "Clear": {
+        "clear sky": {
+          "temp": "hot",
+          "outfit": "T-shirt, shorts, and sunglasses"
+        },
+        "clear sky cold": {
+          "temp": "cold",
+          "outfit": "Warm jacket, jeans, and boots"
+        },
+        "clear sky moderate": {
+          "temp": "moderate",
+          "outfit": "Long sleeve shirt and pants"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Appropriate clothing for the temperature"
+        }
+      },
+      "Clouds": {
+        "few clouds": {
+          "temp": "any",
+          "outfit": "Light jacket and comfortable shoes"
+        },
+        "scattered clouds": {
+          "temp": "any",
+          "outfit": "Light jacket and comfortable shoes"
+        },
+        "broken clouds": {
+          "temp": "any",
+          "outfit": "Jacket and comfortable shoes"
+        },
+        "overcast clouds": {
+          "temp": "any",
+          "outfit": "Warm jacket and comfortable shoes"
+        },
+        "other": {
+          "temp": "any",
+          "outfit": "Light jacket and comfortable shoes"
+        }
+      }
+    }
+  }
+  

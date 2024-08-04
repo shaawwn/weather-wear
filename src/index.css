@@ -19,8 +19,12 @@
   /* height: 100vh; */
 }
 
+html, body {
+	height: 100%;
+}
 body {
   background-color: #004A76;
+  padding: 0 80px;
 }
 
 main {
@@ -61,6 +65,14 @@ main {
   top: 0px;
 }
 
+.nav-input {
+	width: 50%;
+	background-color: #003353;
+	border-radius: 30px;
+	font-size: 28px;
+	margin: auto;
+	padding: .5rem;
+}
 .input-nobottom-border {
 	border-bottom: none
 }
@@ -74,6 +86,47 @@ main {
 
 }
 
+.panel {
+	border-radius: 30px;
+	background-color: #025888;
+	padding: 1rem;
+	box-shadow: 0px 0px 3px 3px rgba(255, 255, 255,.1)
+}
+
+.home-section {
+	height: 90vh;
+}
+.home {
+	display: flex;
+	background-color: green;
+	gap: 40px;
+	justify-content: space-between;
+	height: 100%;
+}
+.current-weather {
+	width: 100%;	
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.current-weather__temp {
+	font-size: 96px;
+}
+
+.text-overlay-wrapper {
+	position: relative;
+}
+
+.text-overlay-text {
+	position: absolute;
+	font-size: 34px;
+}
+.weather-icon {
+	width: 250px;
+	height: 250px;
+	/* background-color: rgba(0,0,0,0.2) */
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -89,7 +142,16 @@ main {
 
 @media (max-width: 763px) {
 
+	body {
+		padding: 0 20px;
+	}
 
+	.home-section {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
   .vertical-center-container {
 	width: 100%;
 	left: 0%;
@@ -103,5 +165,9 @@ main {
 
   .input {
 	height: 50px;
+  }
+  
+  .nav-input {
+	width: 90%;
   }
 }

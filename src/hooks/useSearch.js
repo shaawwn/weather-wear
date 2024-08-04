@@ -14,7 +14,7 @@ export default function useSearch() {
 
     function handleSetLocation(location) {
         // this should set all the weather data for that location and make calls to API for weather data
-        console.log("Setting location in hook to: ", location)
+        // console.log("Setting location in hook to: ", location)
         setLocation(location)
     }
 
@@ -30,7 +30,7 @@ export default function useSearch() {
         //   getCurrentWeather(data[0].lat, data[0].lon)
         //   dailyForecast(data[0].lat, data[0].lon)
             setSearchResults(data)
-            console.log("search results in fetch", data)
+            // console.log("search results in fetch", data)
   
         }).catch((err) => {
           console.log("err", err)
@@ -42,7 +42,7 @@ export default function useSearch() {
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&&units=imperial&appid=${API_KEY}`)
         .then((response) => response.json())
         .then((data) => {
-          console.log("Current Weather", data)
+        //   console.log("Current Weather", data)
           setCurrentWeather(data)
         }).catch((err) => {
           console.log("Err", err)
@@ -55,7 +55,7 @@ export default function useSearch() {
         fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}`)
         .then((response) => response.json())
         .then((data) => {
-          console.log("Weather forecast", data)
+        //   console.log("Weather forecast", data)
           setDailyWeather(data)
         }).catch((err) => {
           console.log("Err", err)

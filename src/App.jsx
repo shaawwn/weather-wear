@@ -5,6 +5,9 @@ import SearchResults from './components/SearchInput'
 import SearchDropdown from './components/SearchDropdown'
 import SearchInput from './components/SearchInput'
 
+import CurrentWeather from './components/CurrentWeather'
+import Outfits from './components/Outfits'
+
 const API_KEY = import.meta.env.VITE_API_KEY
 
 function App() {
@@ -50,7 +53,7 @@ function App() {
     }
 
 	function renderLanding() {
-		console.log("LOcation", location)
+		console.log("Location", location)
 		return(
 			<section className='vertical-center-container'>
 			<h1 className='title'>Weather Wear</h1>
@@ -60,44 +63,62 @@ function App() {
 				searchResults={searchResults}
 				handleSetLocation={handleSetLocation}
 			/>
-{/* 
-			<div className="input-dropdown-container">
-				<input 
-					onChange={(e) => handleChange(e.target.value)}
-					onKeyDown={(e) => handleKeyPress(e)}
-					id="search-input" 
-					className="input"
-					type="text" 
-					placeholder="Search location"
-					
-				></input>
-
-				{searchResults.length > 0 ? 
-					<SearchDropdown 
-						results={searchResults}
-						handleSetLocation={handleSetLocation}
-						/>
-					:null
-				}
-			</div> */}
-
 		</section>
 		)
 	}
 
 	function renderLocation() {
 		// 
+		// console.log("Location in render", location, currentWeather)
+
+		const screenWidth = screen.width
+		console.log("screen", screenWidth)
 		return(
-			<section>
-				<h1>Weather data for {location.name}</h1>
+			<section className="bg-red-400 home-section">
+				{/* searchbar */}
+				<div className="w-full flex p-1">
+					<input className="nav-input" placeholder="Search location"></input>
+				</div>
+
+				<div className="home">
+					<div className="flex flex-col bg-green-400 w-full gap-[40px]">
+					<CurrentWeather 
+						location={location}
+						weather={currentWeather}
+						forecast={dailyForecast}
+					/>
+					<Outfits weather={currentWeather}/>
+					</div>
+
+					{screenWidth > 763 ? 
+						<CurrentWeather 
+							location={location}
+							weather={currentWeather}
+							forecast={dailyForecast}
+						/>
+					:null
+					}
+				</div>
+				
+				{screenWidth< 763 ? 
+					<CurrentWeather 
+						location={location}
+						weather={currentWeather}
+						forecast={dailyForecast}
+					/>
+				:null
+				} 
 			</section>
 		)
 	}
+
+	useEffect(() => {
+
+	}, [location])
 	return (
 		<>
 			<main>
-				{/* {renderHome()} */}
-				{location ? renderLocation() : renderLanding()}
+				{location && currentWeather && dailyForecast ? renderLocation() : renderLanding()}
 			</main>
 
 		</>
